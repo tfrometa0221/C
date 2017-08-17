@@ -1,0 +1,35 @@
+This program converts a test file into a binary file and vice versa. The files contain information
+of imaginary students in an university.
+
+---Before Testing---
+Before trying to test the program, make sure that you download the "makefile",
+which has Unix commands to make it easier for you to test the program.
+
+
+---Makefile commands---
+The following command can be used to make it easier for you to test the program.
+"make" - This will do everything you need to test the code. Preprocessing, Compilation, Assembly, and
+Linking. It will produce an executable file called "converter". Make sure that you downloaded all the
+files before running this command.
+
+If you are interested to make some changes to the code and debug, you might find the following commands
+usefull:
+"make clean" - This will clean the current repository. It will delete the object files and the executable
+file.
+"make warning" - This will produce warnings and errors about the code.
+
+---Testing the Program---
+The following commands can be used to test the code. Make sure that you move the files from 'testCases'
+to the repository you are working on.
+"converter -t t1.txt b1" - This will convert t1.txt to a binary file called b1.
+"converter -t t2.txt b2" - This will convert t2.txt to a binary file called b2.
+"converter -b b1 test1.txt" - This will convert b1 to a text file called test1.txt.
+"converter -b b2 test2.txt" - This will convert b2 to a text file called test2.txt.
+"diff t1.txt test1.txt" - This will check that the original file (t1.txt) is the same as the new file
+(test1.txt).
+"diff t2.txt test2.txt" - This will check that the original file (t2.txt) is the same as the new file
+(test2.txt).
+"converter -s b1" - This will get information from the binary file b1 and display it.
+"converter -s b2" - This will get information from the binary file b2 and display it.
+
+---Have fun playing with the code.---
