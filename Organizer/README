@@ -1,0 +1,39 @@
+This program organizes a directory with many files (music, videos, and other files).
+It takes into account the file extention and the file name. The file name should have a certain format
+for this program to work. For example, the mp3 files are music and should have the format
+artist-album-name.mp3, mkv could be movies or tv shows, each wich has their own format. This program
+does not takes into account all type of files. The files that has unrecognized file extensions will
+be moved to a directory called "other". 
+
+
+---Before Testing---
+Before trying to test the program, make sure that you download the "makefile",
+which has Unix commands to make it easier for you to test the program.
+
+
+---Makefile commands---
+The following command can be used to preprocess, compile, assemble, and link the program.
+"make" - This will do everything you need to test the code. Preprocessing, Compilation, Assembly, and
+Linking. It will produce an executable file called "organizer". Make sure that you downloaded all the
+files before running this command.
+
+If you are interested to make some changes to the code and debug, you might find the following commands
+usefull:
+"make clean" - This will clean the current repository. It will delete the object files and the executable
+file.
+"make warning" - This will produce warnings and errors about the code.
+
+
+---Testing the Program---
+The following commands can be used to test the code. Make sure that you move the files from 'testCases'
+to the repository you are working on.
+"organizer" -  this command will organize the current working directory. It will ignore the executable files,
+the object files created on assembly, and other censitive files.
+"organizer directorypath" -  this command will organize the directory with the name directorypath. For
+example, "organizer test" will organize the directory called test. The directorypath can be either an
+absolute path or a relative path.
+"organizer testCases/before1" - This command will organize the directory called "before1" that resides in
+"testCases". It will end up becoming identical to the directory "after1", which is the organized version of
+"before1".
+
+---Have fun playing with the code.---
