@@ -1,0 +1,17 @@
+wd
+chwd ../prog4
+wd
+create -f test.txt
+list
+create -d ../testingDirectory
+create -h test.txt ../testingDirectory/testH
+create -s ../testingDirectory/testH ../testingDirectory/testS
+list -i ../testingDirectory
+wd
+chwd ../testingDirectory
+wd
+list -h
+list -h ../prog5
+list -h ../prog4
+list -i ..
+quit

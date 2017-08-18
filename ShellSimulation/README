@@ -1,0 +1,72 @@
+This program simulates a simple shell.
+
+---Before Testing---
+Before trying to test the program, make sure that you download the "makefile",
+which has Unix commands to make it easier for you to test the program.
+
+
+---Makefile commands---
+The following command can be used to make it easier for you to test the program.
+"make" - This will do everything you need to test the code. Preprocessing, Compilation, Assembly, and
+Linking. It will produce three (3) executable files called "shell402", "list", and "create". Make sure
+that you downloaded all the files before running this command.
+"make shell402" - Similar to "make", but this will only produce the "shell402" executable.
+"make list" - Similar to "make", but this will only produce the "list" executable.
+"make create" - Similar to "make", but this will only produce the "create" executable.
+
+If you are interested to make some changes to the code and debug, you might find the following commands
+usefull:
+"make clean" - This will clean the current repository. It will delete the object files and the executable
+file.
+"make warning" - This will produce warnings and errors about the code.
+
+
+---Testing the Program---
+Make sure that you move the files from 'testCases' to the repository you are working on.
+
+There are two ways to test this program:
+1) "shell402"
+2) "shell402 scriptfile"
+
+The second way to test this program is straight forward, the shell will read commands from the scriptfile
+until it reaches the "quit" command.
+
+The first way to test this program requires the user to write some commands. There are 5 commands available:
+"list", "create", "wd", "chwd", and "quit".
+
+-list-
+This command lists information about certain files. There are 6 ways to use this command:
+a) "list pathname" - this command will list all the file names of the non-hiden files in the directory
+specified by pathname (absolute or relative).
+b) "list -i pathname" - similar to the top command, except this command print more information about those
+files. File name, size permissions, and inode number.
+c) "list -h pathname" - This command prints the name of all the hidden files.
+d) "list" - similar to "list pathname", except that it execute on the current working directory instead of
+a specific directory.
+e) "list -i" - similar to "list -i pathname", except that it execute on the current working directory instead
+of a specific directory.
+f) "list -h" - similar to "list -h pathname", except that it execute on the current working directory instead
+of a specific directory.
+
+-create-
+This command create specific files. There are 4 ways to use this command:
+a) "create -f filepath" - this command creates an empty file whose name is given by filepath (absolute,
+relative, or just the name).
+b) "create -d dirpath" - this command creates a directory whose name is given by dirpath (absolute, relative,
+or just the directory name.
+c) "create -h oldname linkname" - this command creates a hard link. oldname is the path or name of the
+existing file, while linkname is the path or name of the hard link to be created.
+d) "create -s oldname linkname" - this command creates a soft link. oldname is the path or name of the
+existing file, while linkname is the path or name of the soft link to be created.
+
+-wd-
+This command prints the absolute path of the current working directory.
+
+-chwd-
+This command changes the current working directory to a specified pathname. Given in the form "chwd pathname".
+
+-quit-
+This command simply prints "goodbye" and stops the program.
+
+
+---Have fun playing with the code.---
